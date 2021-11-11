@@ -5,8 +5,11 @@ export type IndicatorType = {
     set: (on: boolean) => void
 }
 
-export const Indicator = (props: IndicatorType) => {
 
+
+export const OldIndicator = (props: IndicatorType) => {
+
+    console.log("Indicator")
 
     const onStyle = {
         width: "30px",
@@ -49,3 +52,4 @@ export const Indicator = (props: IndicatorType) => {
     )
 }
 
+export const Indicator = React.memo(OldIndicator)

@@ -8,8 +8,10 @@ type RatingPropsType = {
 
 }
 
-export function Rating(props: RatingPropsType) {
+const Rating = React.memo(OldRating)
 
+export function OldRating(props: RatingPropsType) {
+    console.log("Rating")
         return (
             <div>
                 <Star selected={props.value > 0} ratingValue={props.value} setRatingValue={() => props.click(1)}/>
@@ -20,6 +22,8 @@ export function Rating(props: RatingPropsType) {
             </div>
         );
 }
+
+// const Star = React.memo(OldStar)
 
 type StarPropsType = {
     selected: boolean
