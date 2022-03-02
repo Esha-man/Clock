@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://esha-man.github.io/clock",
+  "homepage": "https://Esha-man.github.io/Clock",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -11,7 +11,6 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
-    "gh-pages": "^3.2.3",
     "gh-pages-deploy": "^0.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -22,8 +21,8 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
     "build": "babel src -d lib",
+    "start": "react-scripts start",
     "test": "jest",
     "eject": "react-scripts eject"
   },
@@ -55,5 +54,9 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
+    "gh-pages": "^3.2.3"
+  }
 }
